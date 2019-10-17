@@ -110,50 +110,17 @@ function prefetchArray() {
     }
 }
 
-function showToDo() {
-    global $url;
-    $todoDiv = '
-        <div class="row">
-            <div class="col-md-8 offset-md-2 mt-4">
-                <h4>To-Do</h4>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1" checked disabled>
-                    <label class="custom-control-label" for="customCheck1">Bootstrap 4</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1" disabled>
-                    <label class="custom-control-label" for="customCheck1">PNG QR-Code</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1" disabled>
-                    <label class="custom-control-label" for="customCheck1">reCaptcha (ex. https://webdesign.tutsplus.com/tutorials/how-to-integrate-no-captcha-recaptcha-in-your-website--cms-23024)</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1" checked disabled>
-                    <label class="custom-control-label" for="customCheck1">Bootstrap Sweet Alert (ex. https://github.com/liukaijv/sweetalert-bootstrap)</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1" checked disabled>
-                    <label class="custom-control-label" for="customCheck1">Logo and Favicon</label>
-                </div>
-            </div>
-        </div>';
-    switch ($url) {
-        case "localhost":
-            echo $todoDiv;
-            break;
-        default:
-            echo '';
-    }
-}
-
 function showSponsor() {
     global $url;
     $sponsorDiv = 'Localhost by Wampserver';
+    $herokuDiv = 'Hosting by <a href="https://heroku.com" target="_blank" rel="noopener noreferrer"><strong>Heroku</strong></a>';
 
     switch ($url) {
         case "localhost";
             echo $sponsorDiv;
+            break;
+        case "*.herokuapp.com";
+            echo $herokuDiv;
             break;
         default:
             echo 'Hosting by <a href="https://circlehosting.com" target="_blank" rel="noopener noreferrer"><strong>CircleHosting</strong></a>';
