@@ -97,7 +97,7 @@
             <?php showToDo(); ?>
         </div>
     </main>
-    <?php include("layout/footer.php"); ?>
+    <?php require("layout/footer.php"); ?>
 
     <!-- Global JavaScript -->
     <?php jsArray(); ?>
