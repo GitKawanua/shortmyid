@@ -27,18 +27,18 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-md-8 offset-md-2">
+                <div class="col-sm-12 col-md-8 offset-md-2">
                     <div class="d-flex justify-content-center mb-4">
                         <img src="img/logo-01-503x200.png" class="img-fluid w-50" alt="">
                     </div>
                     <form method="POST" action="functions/shorten.php">
                         <div class="form-group row">
-                            <div class="col-md-12">
+                            <div class="col-sm-12 col-md-12">
                                 <input type="url" id="input" name="url" class="form-control form-control-lg" placeholder="Enter a URL here">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <div class="col-md-10 input-group input-group-lg">
+                            <div class="col-sm-12 col-md-10 input-group input-group-lg">
                                 <div class="input-group-prepend">
                                     <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $url; ?>/</button>
                                     <div class="dropdown-menu">
@@ -49,7 +49,7 @@
                                 <input type="text" id="custom" name="custom" class="form-control" placeholder="Enable custom text" aria-label="Large" aria-describedby="inputGroup-sizing-sm"
                                     disabled>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <div class="onoffswitch">
                                     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" onclick="toggle()">
                                     <label class="onoffswitch-label" for="myonoffswitch"></label>
@@ -62,7 +62,7 @@
                             </div>
                         </div> -->
                         <div class="from-group row">
-                            <div class="col-md-12">
+                            <div class="col-sm-12 col-md-12">
                                 <?php
                                 if (isset($_SESSION['success'])) {
                                     echo "<div class='alert alert-success text-center' role='alert'><h4 class='alert-heading mb-3'><i class='fas fa-check'></i> Your shortened URL</h4>
@@ -87,7 +87,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <div class="col-md-4 offset-md-4">
+                            <div class="col-sm-12 col-md-4 offset-md-4">
                                 <input type="submit" class="btn btn-danger btn-lg btn-block" value="Go">
                             </div>
                         </div>
