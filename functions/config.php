@@ -110,31 +110,13 @@ function prefetchArray() {
     }
 }
 
-function getDomainOnly($host){
-    $host = strtolower(trim($host));
-    $host = ltrim(str_replace("http://","",str_replace("https://","",$host)),"www.");
-    $count = substr_count($host, '.');
-    if($count === 2){
-        if(strlen(explode('.', $host)[1]) > 3) $host = explode('.', $host, 2)[1];
-    } else if($count > 2){
-        $host = getDomainOnly(explode('.', $host, 2)[1]);
-    }
-    $host = explode('/',$host);
-    return $host[0];
-}
-
 function showSponsor() {
-    global $url, $host;
-    $getdomain = getDomainOnly($host);
+    global $url;
     $sponsorDiv = 'Localhost by Wampserver';
-    $herokuDiv = 'Hosting by <a href="https://heroku.com" target="_blank" rel="noopener noreferrer"><strong>Heroku</strong></a>';
 
     switch ($url) {
         case "localhost";
             echo $sponsorDiv;
-            break;
-        case $getdomain == "herokuapp.com";
-            echo $herokuDiv;
             break;
         default:
             echo 'Hosting by <a href="https://circlehosting.com" target="_blank" rel="noopener noreferrer"><strong>CircleHosting</strong></a>';
