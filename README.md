@@ -19,7 +19,7 @@ There are many ways to contribute to SPFtoolbox.
 
 ## How to install SPFToolBox
 
-* **Install manually**
+### Install manually
 
 1. Dowload the **[latest release](https://github.com/GitKawanua/shortmyid/releases/latest)** of SPFtoolbox
 2. Upload the contents to your webserver enabled with PHP 5.3+
