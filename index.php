@@ -94,10 +94,9 @@
                     </form>
                 </div>
             </div>
-            <?php showToDo(); ?>
         </div>
     </main>
-    <?php require("layout/footer.php"); ?>
+    <?php include("layout/footer.php"); ?>
 
     <!-- Global JavaScript -->
     <?php jsArray(); ?>
