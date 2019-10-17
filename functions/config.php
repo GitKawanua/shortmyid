@@ -100,7 +100,7 @@ function prefetchArray() {
         "//static.my.id", 
         "//font.my.id", 
         "//www.google.com", 
-        "//www.gstatic.com"
+        "//www.gstatic.com",
         "//img.shields.io"
     );
     $fetchSum = count($fetchList);
