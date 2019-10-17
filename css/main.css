@@ -1,0 +1,107 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Inter', sans-serif !important;
+    background-color: #f7f7f7;
+    padding-bottom: 150px;
+}
+
+main {
+    margin-top: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+}
+
+main a, footer a {
+    color: #EA215A;
+    text-decoration: none;
+}
+
+main a:hover, main a:focus, footer a:hover, footer a:focus {
+    border-bottom: #cccccc 0.125em solid;
+    color: #343a40;
+    text-decoration: none;
+}
+
+.onoffswitch {
+    position: relative;
+    width: 95px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    height: 45px;
+    padding: 0;
+    line-height: 45px;
+    border: 2px solid #999999;
+    border-radius: 45px;
+    background-color: #EEEEEE;
+    transition: background-color 0.3s ease-in;
+}
+
+.onoffswitch-label:before {
+    content: "";
+    display: block;
+    width: 45px;
+    margin: 0px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50px;
+    border: 2px solid #999999;
+    border-radius: 30px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: #F03A0F;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    border-color: #F03A0F;
+}
+
+.form-control:focus {
+    border-color: #F03A0F;
+    box-shadow: 0 0 0 0.2rem rgba(240, 58, 15, 0.25);
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px;
+}
+#inputGroup-sizing-lg, .dropdown-toggle {
+    height: calc(1.5em + 1rem + 2px);
+}
+.dropdown-toggle::after {
+    margin-left: .555em;
+}
+.nofamily {
+    font-family: unset;
+}
+footer {
+    border-top: 1px solid #e9ecef; 
+    margin-top: 20px; 
+    padding-top: 15px;
+}
