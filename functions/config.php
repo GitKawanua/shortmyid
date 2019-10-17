@@ -10,12 +10,12 @@
 
 if ( !defined('SITE_NAME') )
 {
-    define('SITE_NAME', "Make It Short");
+    define('SITE_NAME', "Short My ID");
 }
 
 if ( !defined('SITE_DESC') )
 {
-    define('SITE_DESC', "URL Shortnerer");
+    define('SITE_DESC', "URL Shortener");
 }
 
 if ( !defined('SITE_AUTHOR') )
@@ -34,17 +34,17 @@ if ( !defined('BASE_URL') )
 
 if ( !defined('HOST_NAME') )
 {
-    define('HOST_NAME', "127.0.0.1:3306");
+    define('HOST_NAME', "localhost:3306");
 }
 
 if ( !defined('DB_NAME') )
 {
-    define('DB_NAME', "shortmyid");
+    define('DB_NAME', "");
 }
 
 if ( !defined('USER_NAME') )
 {
-    define('USER_NAME', "root");
+    define('USER_NAME', "");
 }
 
 if ( !defined('USER_PASSWORD') )
@@ -56,12 +56,12 @@ if ( !defined('USER_PASSWORD') )
 
 if ( !defined('SITE_KEY') )
 {
-    define('SITE_KEY', "6Le4UL0UAAAAAI58pD45hd5VBgHxxnFAq3WUnep3");
+    define('SITE_KEY', "YOUR_SITE_KEY");
 }
 
 if ( !defined('SECRET_KEY') )
 {
-    define('SECRET_KEY', "6Le4UL0UAAAAAOnSOEmWkFmM1fG03mZwgllHMGvW");
+    define('SECRET_KEY', "YOUR_SECRET_KEY");
 }
 
 function cssArray() {
@@ -130,10 +130,6 @@ function showToDo() {
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input" id="customCheck1" checked disabled>
                     <label class="custom-control-label" for="customCheck1">Bootstrap Sweet Alert (ex. https://github.com/liukaijv/sweetalert-bootstrap)</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1" disabled>
-                    <label class="custom-control-label" for="customCheck1">Report Abuse Submission (ex. https://www.shorturl.at/report-malicious-url.php)</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input" id="customCheck1" checked disabled>
