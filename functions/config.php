@@ -124,7 +124,7 @@ function getDomainOnly($host){
 }
 
 function showSponsor() {
-    global $url;
+    global $url, $host;
     $getdomain = getDomainOnly($host);
     $sponsorDiv = 'Localhost by Wampserver';
     $herokuDiv = 'Hosting by <a href="https://heroku.com" target="_blank" rel="noopener noreferrer"><strong>Heroku</strong></a>';
