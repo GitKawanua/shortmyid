@@ -133,7 +133,7 @@ function showSponsor() {
         case "localhost";
             echo $sponsorDiv;
             break;
-        case $getdomain;
+        case $getdomain == "herokuapp.com";
             echo $herokuDiv;
             break;
         default:
