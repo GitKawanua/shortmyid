@@ -110,8 +110,22 @@ function prefetchArray() {
     }
 }
 
+function getDomainOnly($host){
+    $host = strtolower(trim($host));
+    $host = ltrim(str_replace("http://","",str_replace("https://","",$host)),"www.");
+    $count = substr_count($host, '.');
+    if($count === 2){
+        if(strlen(explode('.', $host)[1]) > 3) $host = explode('.', $host, 2)[1];
+    } else if($count > 2){
+        $host = getDomainOnly(explode('.', $host, 2)[1]);
+    }
+    $host = explode('/',$host);
+    return $host[0];
+}
+
 function showSponsor() {
     global $url;
+    $getdomain = getDomainOnly($host);
     $sponsorDiv = 'Localhost by Wampserver';
     $herokuDiv = 'Hosting by <a href="https://heroku.com" target="_blank" rel="noopener noreferrer"><strong>Heroku</strong></a>';
 
@@ -119,7 +133,7 @@ function showSponsor() {
         case "localhost";
             echo $sponsorDiv;
             break;
-        case "*.herokuapp.com";
+        case $getdomain;
             echo $herokuDiv;
             break;
         default:
