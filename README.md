@@ -4,6 +4,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/GitKawanua/shortmyid?style=flat-square)
 ![GitHub Release Date](https://img.shields.io/github/release-date/GitKawanua/shortmyid?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/GitKawanua/shortmyid?style=flat-square)
+![GitHub](https://img.shields.io/github/license/GitKawanua/shortmyid?style=flat-square)
 ![Website](https://img.shields.io/website?style=flat-square&url=https%3A%2F%2Fshort.my.id)
 ![Twitter URL](https://img.shields.io/twitter/url?style=flat-square&url=https%3A%2F%2Ftwitter.com%2FKawanuaCo)
 
