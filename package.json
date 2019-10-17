@@ -1,0 +1,21 @@
+{
+    "name": "shortmyid",
+    "version": "1.0.0",
+    "description": "shortmyid is a url shortener script",
+    "main": "index.php",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/GitKawanua/shortmyid.git"
+    },
+    "author": "Amar Prakash Pandey",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/urls/url-shortener/issues"
+    },
+    "homepage": "https://github.com/urls/url-shortener",
+    "dependencies": {}
+  }
+  
