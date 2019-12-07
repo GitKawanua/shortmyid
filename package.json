@@ -1,6 +1,6 @@
 {
     "name": "shortmyid",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "shortmyid is a url shortener script",
     "main": "index.php",
     "scripts": {
@@ -15,7 +15,7 @@
     "bugs": {
       "url": "https://github.com/urls/url-shortener/issues"
     },
-    "homepage": "https://github.com/urls/url-shortener",
+    "homepage": "https://github.com/GitKawanua/shortmyid",
     "dependencies": {}
   }
   
