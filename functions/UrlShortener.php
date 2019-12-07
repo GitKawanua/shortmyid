@@ -25,11 +25,15 @@
        * @return integer
        */
 
-  	public function generateUniqueCode($idOfRow)
-  	{
-  		$idOfRow += 10000000;
-  		return base_convert($idOfRow, 10, 36);
-  	}
+	  public function generateUniqueCode($newKarakter) {
+		$karakter = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+		$karakterLength = strlen($karakter);
+		$newKarakter = '';
+		for ($i = 0; $i < 8; $i++) {
+			$newKarakter .= $karakter[rand(0, $karakterLength - 1)];
+		}
+		return $newKarakter;
+	}
 
 
   	/**
